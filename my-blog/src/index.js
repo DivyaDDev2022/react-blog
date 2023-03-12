@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import SignUp from './pages/signup/index'
 import Landing from './pages/landing/index'
+import Post from './pages/landing/post'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/landing",
     element: <Landing />,
+  },
+  {
+    path: "/post",
+    element: <Post />,
   }
 ]);
 

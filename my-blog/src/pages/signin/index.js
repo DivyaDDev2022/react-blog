@@ -11,6 +11,7 @@ function SignIn() {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
+    navigate("/landing", { state: { username: 'Tuts+ Envato', email: 'tuts@envato.com', uid: '123' } })
     var formdata = new FormData();
 
     var requestOptions = {
@@ -22,7 +23,10 @@ function SignIn() {
     const url = `http://localhost:5000/api/get/userprofilefromdb?email=${email}&pwd=${password}`
     fetch(url, requestOptions)
       .then(response => response.text())
-      .then(result => navigate("/landing"))
+      .then(result => {navigate("/landing", {
+        email: email,
+        username: result.username,
+      })})
       .catch(error => setError('Something Went Wrong'));
   }
 

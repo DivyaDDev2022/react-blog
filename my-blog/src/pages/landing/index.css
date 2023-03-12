@@ -1,0 +1,60 @@
+.container {
+    width: auto;
+    display: block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    border: 5px solid black;
+    margin: 50px;
+    background: #f9eee4;
+    border-radius: 16px;
+}
+
+.title {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.title button {
+    margin-left: 200px;
+}
+
+.post_title {
+    text-decoration: underline;
+    color: navy;
+    cursor: pointer;
+}
+
+.header {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    width: 34%;
+    line-height: 48px;
+}
+
+.post_container {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+
+span {
+    line-height: 32px;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+}

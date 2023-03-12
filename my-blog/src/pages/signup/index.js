@@ -31,6 +31,7 @@ function SignUp() {
   //     });
   //   }
   const handleSubmit = () => {
+    navigate("/landing", { state: { username: 'Tuts+ Envato', email: 'tuts@envato.com', uid: '123' } })
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "text/plain");
 
